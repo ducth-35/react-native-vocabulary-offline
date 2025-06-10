@@ -16,7 +16,6 @@
     "@react-navigation/bottom-tabs": "^6.5.11",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/native-stack": "^6.9.17",
-    "@shopify/react-native-skia": "^0.1.237",
     "@tanstack/react-query": "^5.18.1",
     "axios": "^1.6.7",
     "moment": "^2.30.1",
@@ -27,7 +26,6 @@
     "react-native-safe-area-context": "^5.2.0",
     "react-native-screens": "^4.9.0",
     "react-native-size-matters": "^0.4.2",
-    "react-native-svg": "^14.1.0",
     "react-native-vector-icons": "^10.2.0",
     "zustand": "^4.5.0"
   },

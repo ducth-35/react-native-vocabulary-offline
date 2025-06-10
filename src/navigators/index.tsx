@@ -11,7 +11,7 @@ export const Navigations: React.FC = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName={APP_SCREEN.HOME}>
         <Stack.Screen name={APP_SCREEN.HOME} component={HomeScreen} />
-        <Stack.Screen name={APP_SCREEN.PROFILE} component={ProfileScreen} />,
+        <Stack.Screen name={APP_SCREEN.PROFILE} component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

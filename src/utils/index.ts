@@ -11,3 +11,6 @@ export const getRoute = (baseRoute: string, params: {[key: string]: any}) => {
   }
   return route;
 };
+
+// Export TTS Service
+export { ttsService } from './ttsService';

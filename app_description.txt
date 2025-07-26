@@ -1,0 +1,61 @@
+=== SHORT DESCRIPTION ===
+
+Học từ vựng tiếng Anh offline với 8 chủ đề phong phú. Ứng dụng cung cấp từ vựng hàng ngày, flashcard, quiz và phát âm chuẩn để giúp bạn nâng cao vốn từ vựng một cách hiệu quả.
+
+=== LONG DESCRIPTION ===
+
+React Native Vocabulary Offline là ứng dụng học từ vựng tiếng Anh hoàn toàn offline, được thiết kế để giúp người học nâng cao vốn từ vựng một cách có hệ thống và hiệu quả.
+
+🌟 TÍNH NĂNG CHÍNH:
+
+📚 8 Chủ đề đa dạng:
+- Trái cây (Fruits) - 17 từ vựng
+- Động vật (Animals) - 19 từ vựng  
+- Màu sắc (Colors) - 11 từ vựng
+- Gia đình (Family) - 11 từ vựng
+- Nghề nghiệp (Jobs) - 12 từ vựng
+- Thức ăn (Food) - 12 từ vựng
+- Bộ phận cơ thể (Body Parts) - 12 từ vựng
+- Trường học (School) - 12 từ vựng
+- Thời tiết (Weather) - 12 từ vựng
+
+📅 Từ vựng hàng ngày:
+- Mỗi ngày 5 từ vựng mới được chọn tự động
+- Từ vựng giữ nguyên trong ngày, chỉ thay đổi khi sang ngày mới
+- Theo dõi tiến độ học tập hàng ngày
+
+🎯 Phương pháp học đa dạng:
+- Flashcard tương tác với hiệu ứng lật thẻ
+- Quiz trắc nghiệm kiểm tra kiến thức
+- Phát âm chuẩn với Text-to-Speech
+- Ví dụ câu thực tế cho mỗi từ vựng
+
+📊 Theo dõi tiến độ:
+- Thống kê từ vựng đã học
+- Streak học tập liên tục
+- Tiến độ hoàn thành hàng ngày
+
+🎨 Giao diện thân thiện:
+- Thiết kế Material Design hiện đại
+- Màu sắc phân biệt theo chủ đề
+- Hiệu ứng gradient và animation mượt mà
+- Hỗ trợ cả tiếng Việt và tiếng Anh
+
+⚡ Hoạt động hoàn toàn offline:
+- Không cần kết nối internet
+- Dữ liệu được lưu trữ cục bộ
+- Truy cập nhanh chóng mọi lúc mọi nơi
+
+Ứng dụng phù hợp cho mọi lứa tuổi, từ học sinh, sinh viên đến người đi làm muốn cải thiện vốn từ vựng tiếng Anh của mình.
+
+=== KEYWORDS ===
+
+học tiếng anh, từ vựng, vocabulary, offline, flashcard, quiz, phát âm, react native, học tập, giáo dục, english learning, pronunciation, daily words, progress tracking
+
+=== TECHNICAL INFO ===
+
+Platform: React Native (iOS & Android)
+Storage: AsyncStorage (Offline)
+Text-to-Speech: Built-in TTS
+State Management: Zustand
+UI Framework: React Native with custom styling

@@ -17,21 +17,15 @@ import { ttsService } from '../../utils';
 import { colors, spacing, borderRadius, shadows } from '../../styles/theme';
 
 export const DailyWordsScreen: React.FC = () => {
-  const { 
-    topics, 
-    userSettings, 
-    actions 
+  const {
+    topics,
+    actions
   } = useVocabularyStore(state => state);
   
   const [dailyWords, setDailyWords] = useState<Word[]>([]);
   const [learnedWords, setLearnedWords] = useState<string[]>([]);
 
-  useEffect(() => {
-    // Generate daily words if not already generated
-    if (actions && actions.generateDailyWords) {
-      actions.generateDailyWords();
-    }
-
+  const refreshData = () => {
     // Get today's words (assigned for today)
     if (actions && actions.getDailyWords) {
       const wordIds = actions.getDailyWords();
@@ -41,19 +35,31 @@ export const DailyWordsScreen: React.FC = () => {
       const words = allWords.filter(word => wordIds.includes(word.id));
 
       setDailyWords(words);
+
+      // Get completed words - only those that belong to today's words
+      if (actions && actions.getCompletedWords) {
+        const completedIds = actions.getCompletedWords();
+        // Filter to only include words that are in today's daily words
+        const todayCompletedIds = completedIds.filter(id => wordIds.includes(id));
+        setLearnedWords(todayCompletedIds);
+      }
+    }
+  };
+
+  useEffect(() => {
+    // Generate daily words if not already generated
+    if (actions && actions.generateDailyWords) {
+      actions.generateDailyWords();
     }
 
-    // Get completed words
-    if (actions && actions.getCompletedWords) {
-      const completedIds = actions.getCompletedWords();
-      setLearnedWords(completedIds);
-    }
+    refreshData();
   }, [topics, actions]);
 
   const markWordAsLearned = (wordId: string) => {
     if (actions && actions.addWordToDaily) {
       actions.addWordToDaily(wordId);
-      setLearnedWords(prev => [...prev, wordId]);
+      // Refresh data from store to ensure consistency
+      refreshData();
     }
   };
 

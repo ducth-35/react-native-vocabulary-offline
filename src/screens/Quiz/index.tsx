@@ -6,24 +6,26 @@ import {
   SafeAreaView,
   Alert,
 } from 'react-native';
-import React, { useState, useEffect } from 'react';
-import { RouteProp, useRoute, useNavigation } from '@react-navigation/native';
-import { useVocabularyStore } from '../../store/useVocabularyStore';
-import { APP_SCREEN, RootStackParamList } from '../../navigators/screen-type';
-import { Word, QuizQuestion } from '../../types';
+import React, {useState, useEffect} from 'react';
+import {RouteProp, useRoute, useNavigation} from '@react-navigation/native';
+import {useVocabularyStore} from '../../store/useVocabularyStore';
+import {APP_SCREEN, RootStackParamList} from '../../navigators/screen-type';
+import {Word, QuizQuestion} from '../../types';
 
 type QuizRouteProp = RouteProp<RootStackParamList, APP_SCREEN.QUIZ>;
 
 export const QuizScreen: React.FC = () => {
   const route = useRoute<QuizRouteProp>();
   const navigation = useNavigation();
-  const { topicId } = route.params || {};
+  const {topicId} = route.params || {};
 
-  const { actions, topics } = useVocabularyStore(state => state);
+  const {actions, topics} = useVocabularyStore(state => state);
   const topic = useVocabularyStore(state =>
-    topicId && state.actions && state.actions.getTopicById ? state.actions.getTopicById(topicId) : undefined
+    topicId && state.actions && state.actions.getTopicById
+      ? state.actions.getTopicById(topicId)
+      : undefined,
   );
-  
+
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -54,16 +56,12 @@ export const QuizScreen: React.FC = () => {
     setQuizTitle(titleText);
 
     if (wordsToUse.length < 4) {
-      Alert.alert(
-        'Lỗi',
-        'Cần ít nhất 4 từ để tạo quiz',
-        [
-          {
-            text: 'OK',
-            onPress: () => navigation.goBack()
-          }
-        ]
-      );
+      Alert.alert('Lỗi', 'Cần ít nhất 4 từ để tạo quiz', [
+        {
+          text: 'OK',
+          onPress: () => navigation.goBack(),
+        },
+      ]);
       return;
     }
 
@@ -83,7 +81,7 @@ export const QuizScreen: React.FC = () => {
         .map(w => w.vietnamese);
 
       const correctAnswerIndex = options.findIndex(
-        option => option === correctWord.vietnamese
+        option => option === correctWord.vietnamese,
       );
 
       newQuestions.push({
@@ -100,10 +98,10 @@ export const QuizScreen: React.FC = () => {
 
   const selectAnswer = (answerIndex: number) => {
     if (isAnswered) return;
-    
+
     setSelectedAnswer(answerIndex);
     setIsAnswered(true);
-    
+
     if (answerIndex === questions[currentQuestionIndex].correctAnswer) {
       setScore(score + 1);
     }
@@ -148,15 +146,19 @@ export const QuizScreen: React.FC = () => {
       <SafeAreaView style={styles.container}>
         <View style={styles.resultContainer}>
           <Text style={styles.resultTitle}>Kết Quả Quiz</Text>
-          <Text style={styles.resultScore}>{score}/{questions.length}</Text>
-          <Text style={styles.resultPercentage}>{percentage}%</Text>
-          
-          <Text style={styles.resultMessage}>
-            {percentage >= 80 ? 'Xuất sắc! 🎉' : 
-             percentage >= 60 ? 'Tốt lắm! 👍' : 
-             'Cần cố gắng thêm! 💪'}
+          <Text style={styles.resultScore}>
+            {score}/{questions.length}
           </Text>
-          
+          <Text style={styles.resultPercentage}>{percentage}%</Text>
+
+          <Text style={styles.resultMessage}>
+            {percentage >= 80
+              ? 'Xuất sắc! 🎉'
+              : percentage >= 60
+              ? 'Tốt lắm! 👍'
+              : 'Cần cố gắng thêm! 💪'}
+          </Text>
+
           <TouchableOpacity style={styles.restartButton} onPress={restartQuiz}>
             <Text style={styles.restartButtonText}>Làm Lại</Text>
           </TouchableOpacity>
@@ -188,7 +190,7 @@ export const QuizScreen: React.FC = () => {
         {currentQuestion.options.map((option, index) => {
           let buttonStyle = styles.optionButton;
           let textStyle = styles.optionText;
-          
+
           if (isAnswered) {
             if (index === currentQuestion.correctAnswer) {
               buttonStyle = [styles.optionButton, styles.correctOption];
@@ -206,8 +208,7 @@ export const QuizScreen: React.FC = () => {
               key={index}
               style={buttonStyle}
               onPress={() => selectAnswer(index)}
-              disabled={isAnswered}
-            >
+              disabled={isAnswered}>
               <Text style={textStyle}>{option}</Text>
             </TouchableOpacity>
           );
@@ -219,7 +220,9 @@ export const QuizScreen: React.FC = () => {
         <View style={styles.nextContainer}>
           <TouchableOpacity style={styles.nextButton} onPress={nextQuestion}>
             <Text style={styles.nextButtonText}>
-              {currentQuestionIndex < questions.length - 1 ? 'Câu Tiếp' : 'Xem Kết Quả'}
+              {currentQuestionIndex < questions.length - 1
+                ? 'Câu Tiếp'
+                : 'Xem Kết Quả'}
             </Text>
           </TouchableOpacity>
         </View>
@@ -234,12 +237,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#F8F9FA',
   },
   header: {
-    padding: 20,
+    paddingTop: 40,
+    paddingBottom: 20,
     backgroundColor: '#FFFFFF',
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
@@ -269,7 +273,7 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     marginBottom: 20,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
@@ -289,7 +293,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     marginBottom: 12,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
@@ -332,7 +336,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 40,
     borderRadius: 25,
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+    shadowOffset: {width: 0, height: 2},
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,

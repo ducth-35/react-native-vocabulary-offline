@@ -1,4 +1,4 @@
-package com.template
+package com.vocabhero.tuvungmoingay
 
 import android.app.Application
 import com.facebook.react.PackageList

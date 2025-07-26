@@ -1,6 +1,4 @@
-import { Topic } from '../types';
-
-// Dữ liệu từ vựng mẫu cho ứng dụng "Từ Vựng Mỗi Ngày"
+import {Topic} from '../types';
 
 export const vocabularyData: Topic[] = [
   {
@@ -17,7 +15,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Táo',
         phonetic: '/ˈæpəl/',
         example: 'I eat an apple every day.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'banana',
@@ -25,7 +23,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Chuối',
         phonetic: '/bəˈnænə/',
         example: 'The banana is yellow.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'orange',
@@ -33,7 +31,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Cam',
         phonetic: '/ˈɔːrɪndʒ/',
         example: 'Orange juice is delicious.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'grape',
@@ -41,7 +39,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Nho',
         phonetic: '/ɡreɪp/',
         example: 'Grapes are sweet.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'strawberry',
@@ -49,7 +47,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Dâu tây',
         phonetic: '/ˈstrɔːberi/',
         example: 'Strawberries are red.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'mango',
@@ -57,7 +55,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Xoài',
         phonetic: '/ˈmæŋɡoʊ/',
         example: 'Mango is a tropical fruit.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'pineapple',
@@ -65,7 +63,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Dứa/Thơm',
         phonetic: '/ˈpaɪnæpəl/',
         example: 'Pineapple is sweet and sour.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'watermelon',
@@ -73,7 +71,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Dưa hấu',
         phonetic: '/ˈwɔːtərmelən/',
         example: 'Watermelon is refreshing in summer.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'coconut',
@@ -81,7 +79,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Dừa',
         phonetic: '/ˈkoʊkənʌt/',
         example: 'Coconut water is healthy.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'lemon',
@@ -89,7 +87,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Chanh vàng',
         phonetic: '/ˈlemən/',
         example: 'Lemon is sour.',
-        topicId: 'fruits'
+        topicId: 'fruits',
       },
       {
         id: 'peach',
@@ -97,9 +95,49 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Đào',
         phonetic: '/piːtʃ/',
         example: 'Peach is soft and sweet.',
-        topicId: 'fruits'
-      }
-    ]
+        topicId: 'fruits',
+      },
+      {
+        id: 'kiwi',
+        english: 'Kiwi',
+        vietnamese: 'Kiwi',
+        phonetic: '/ˈkiːwi/',
+        example: 'Kiwi is green inside.',
+        topicId: 'fruits',
+      },
+      {
+        id: 'cherry',
+        english: 'Cherry',
+        vietnamese: 'Anh đào',
+        phonetic: '/ˈtʃeri/',
+        example: 'Cherries are small and red.',
+        topicId: 'fruits',
+      },
+      {
+        id: 'plum',
+        english: 'Plum',
+        vietnamese: 'Mận',
+        phonetic: '/plʌm/',
+        example: 'Plums are purple.',
+        topicId: 'fruits',
+      },
+      {
+        id: 'avocado',
+        english: 'Avocado',
+        vietnamese: 'Bơ',
+        phonetic: '/ˌævəˈkɑːdoʊ/',
+        example: 'Avocado is healthy.',
+        topicId: 'fruits',
+      },
+      {
+        id: 'papaya',
+        english: 'Papaya',
+        vietnamese: 'Đu đủ',
+        phonetic: '/pəˈpaɪə/',
+        example: 'Papaya is orange.',
+        topicId: 'fruits',
+      },
+    ],
   },
   {
     id: 'animals',
@@ -115,7 +153,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Chó',
         phonetic: '/dɔːɡ/',
         example: 'The dog is friendly.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'cat',
@@ -123,7 +161,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Mèo',
         phonetic: '/kæt/',
         example: 'The cat is sleeping.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'bird',
@@ -131,7 +169,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Chim',
         phonetic: '/bɜːrd/',
         example: 'The bird can fly.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'fish',
@@ -139,7 +177,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Cá',
         phonetic: '/fɪʃ/',
         example: 'Fish live in water.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'elephant',
@@ -147,7 +185,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Voi',
         phonetic: '/ˈeləfənt/',
         example: 'The elephant is big.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'lion',
@@ -155,7 +193,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Sư tử',
         phonetic: '/ˈlaɪən/',
         example: 'The lion is the king of animals.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'tiger',
@@ -163,7 +201,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Hổ',
         phonetic: '/ˈtaɪɡər/',
         example: 'Tigers have orange fur with black stripes.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'monkey',
@@ -171,7 +209,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Khỉ',
         phonetic: '/ˈmʌŋki/',
         example: 'Monkeys like to eat bananas.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'rabbit',
@@ -179,7 +217,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Thỏ',
         phonetic: '/ˈræbɪt/',
         example: 'Rabbits have long ears.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'horse',
@@ -187,7 +225,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Ngựa',
         phonetic: '/hɔːrs/',
         example: 'Horses can run very fast.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'cow',
@@ -195,7 +233,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Bò',
         phonetic: '/kaʊ/',
         example: 'Cows give us milk.',
-        topicId: 'animals'
+        topicId: 'animals',
       },
       {
         id: 'pig',
@@ -203,9 +241,57 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Heo/Lợn',
         phonetic: '/pɪɡ/',
         example: 'Pigs are intelligent animals.',
-        topicId: 'animals'
-      }
-    ]
+        topicId: 'animals',
+      },
+      {
+        id: 'sheep',
+        english: 'Sheep',
+        vietnamese: 'Cừu',
+        phonetic: '/ʃiːp/',
+        example: 'Sheep give us wool.',
+        topicId: 'animals',
+      },
+      {
+        id: 'goat',
+        english: 'Goat',
+        vietnamese: 'Dê',
+        phonetic: '/ɡoʊt/',
+        example: 'Goats eat grass.',
+        topicId: 'animals',
+      },
+      {
+        id: 'duck',
+        english: 'Duck',
+        vietnamese: 'Vịt',
+        phonetic: '/dʌk/',
+        example: 'Ducks swim in the pond.',
+        topicId: 'animals',
+      },
+      {
+        id: 'chicken_animal',
+        english: 'Chicken',
+        vietnamese: 'Gà',
+        phonetic: '/ˈtʃɪkɪn/',
+        example: 'Chickens lay eggs.',
+        topicId: 'animals',
+      },
+      {
+        id: 'frog',
+        english: 'Frog',
+        vietnamese: 'Ếch',
+        phonetic: '/frɔːɡ/',
+        example: 'Frogs live near water.',
+        topicId: 'animals',
+      },
+      {
+        id: 'snake',
+        english: 'Snake',
+        vietnamese: 'Rắn',
+        phonetic: '/sneɪk/',
+        example: 'Snakes have no legs.',
+        topicId: 'animals',
+      },
+    ],
   },
   {
     id: 'colors',
@@ -221,7 +307,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Đỏ',
         phonetic: '/red/',
         example: 'The rose is red.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'blue',
@@ -229,7 +315,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Xanh dương',
         phonetic: '/bluː/',
         example: 'The sky is blue.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'green',
@@ -237,7 +323,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Xanh lá',
         phonetic: '/ɡriːn/',
         example: 'Grass is green.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'yellow',
@@ -245,7 +331,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Vàng',
         phonetic: '/ˈjeloʊ/',
         example: 'The sun is yellow.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'purple',
@@ -253,7 +339,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Tím',
         phonetic: '/ˈpɜːrpəl/',
         example: 'The flower is purple.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'orange',
@@ -261,7 +347,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Cam (màu)',
         phonetic: '/ˈɔːrɪndʒ/',
         example: 'Orange is a warm color.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'pink',
@@ -269,7 +355,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Hồng',
         phonetic: '/pɪŋk/',
         example: 'Pink roses are beautiful.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'brown',
@@ -277,7 +363,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Nâu',
         phonetic: '/braʊn/',
         example: 'The tree trunk is brown.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'black',
@@ -285,7 +371,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Đen',
         phonetic: '/blæk/',
         example: 'The night sky is black.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'white',
@@ -293,7 +379,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Trắng',
         phonetic: '/waɪt/',
         example: 'Snow is white.',
-        topicId: 'colors'
+        topicId: 'colors',
       },
       {
         id: 'gray',
@@ -301,9 +387,9 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Xám',
         phonetic: '/ɡreɪ/',
         example: 'Clouds are gray before rain.',
-        topicId: 'colors'
-      }
-    ]
+        topicId: 'colors',
+      },
+    ],
   },
   {
     id: 'family',
@@ -319,7 +405,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Bố',
         phonetic: '/ˈfɑːðər/',
         example: 'My father is tall.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'mother',
@@ -327,7 +413,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Mẹ',
         phonetic: '/ˈmʌðər/',
         example: 'My mother is kind.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'brother',
@@ -335,7 +421,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Anh/Em trai',
         phonetic: '/ˈbrʌðər/',
         example: 'I have one brother.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'sister',
@@ -343,7 +429,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Chị/Em gái',
         phonetic: '/ˈsɪstər/',
         example: 'My sister is smart.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'grandmother',
@@ -351,7 +437,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Bà',
         phonetic: '/ˈɡrænmʌðər/',
         example: 'Grandmother tells stories.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'grandfather',
@@ -359,7 +445,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Ông',
         phonetic: '/ˈɡrænfɑːðər/',
         example: 'Grandfather reads newspapers.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'uncle',
@@ -367,7 +453,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Chú/Bác',
         phonetic: '/ˈʌŋkəl/',
         example: 'My uncle is funny.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'aunt',
@@ -375,7 +461,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Cô/Dì',
         phonetic: '/ænt/',
         example: 'Aunt Mary cooks well.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'cousin',
@@ -383,7 +469,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Anh/Chị/Em họ',
         phonetic: '/ˈkʌzən/',
         example: 'My cousin lives far away.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'son',
@@ -391,7 +477,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Con trai',
         phonetic: '/sʌn/',
         example: 'Their son is very smart.',
-        topicId: 'family'
+        topicId: 'family',
       },
       {
         id: 'daughter',
@@ -399,9 +485,9 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Con gái',
         phonetic: '/ˈdɔːtər/',
         example: 'Their daughter loves music.',
-        topicId: 'family'
-      }
-    ]
+        topicId: 'family',
+      },
+    ],
   },
   {
     id: 'jobs',
@@ -417,7 +503,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Giáo viên',
         phonetic: '/ˈtiːtʃər/',
         example: 'The teacher is helpful.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'doctor',
@@ -425,7 +511,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Bác sĩ',
         phonetic: '/ˈdɑːktər/',
         example: 'The doctor helps people.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'nurse',
@@ -433,7 +519,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Y tá',
         phonetic: '/nɜːrs/',
         example: 'The nurse is caring.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'police',
@@ -441,7 +527,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Cảnh sát',
         phonetic: '/pəˈliːs ˈɔːfɪsər/',
         example: 'Police officers keep us safe.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'chef',
@@ -449,7 +535,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Đầu bếp',
         phonetic: '/ʃef/',
         example: 'The chef cooks delicious food.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'engineer',
@@ -457,7 +543,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Kỹ sư',
         phonetic: '/ˌendʒɪˈnɪr/',
         example: 'Engineers design buildings.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'lawyer',
@@ -465,7 +551,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Luật sư',
         phonetic: '/ˈlɔːjər/',
         example: 'Lawyers work in courts.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'pilot',
@@ -473,7 +559,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Phi công',
         phonetic: '/ˈpaɪlət/',
         example: 'Pilots fly airplanes.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'farmer',
@@ -481,7 +567,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Nông dân',
         phonetic: '/ˈfɑːrmər/',
         example: 'Farmers grow crops.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'artist',
@@ -489,7 +575,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Nghệ sĩ',
         phonetic: '/ˈɑːrtɪst/',
         example: 'Artists create beautiful paintings.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'musician',
@@ -497,7 +583,7 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Nhạc sĩ',
         phonetic: '/mjuˈzɪʃən/',
         example: 'Musicians play instruments.',
-        topicId: 'jobs'
+        topicId: 'jobs',
       },
       {
         id: 'driver',
@@ -505,8 +591,432 @@ export const vocabularyData: Topic[] = [
         vietnamese: 'Tài xế',
         phonetic: '/ˈdraɪvər/',
         example: 'Bus drivers transport people.',
-        topicId: 'jobs'
-      }
-    ]
-  }
+        topicId: 'jobs',
+      },
+    ],
+  },
+  {
+    id: 'food',
+    name: 'Food',
+    nameVietnamese: 'Thức Ăn',
+    description: 'Học từ vựng về các món ăn và thức uống',
+    icon: '🍕',
+    color: '#FF9F43',
+    words: [
+      {
+        id: 'rice',
+        english: 'Rice',
+        vietnamese: 'Cơm',
+        phonetic: '/raɪs/',
+        example: 'I eat rice every day.',
+        topicId: 'food',
+      },
+      {
+        id: 'bread',
+        english: 'Bread',
+        vietnamese: 'Bánh mì',
+        phonetic: '/bred/',
+        example: 'I have bread for breakfast.',
+        topicId: 'food',
+      },
+      {
+        id: 'noodles',
+        english: 'Noodles',
+        vietnamese: 'Mì',
+        phonetic: '/ˈnuːdəlz/',
+        example: 'Vietnamese noodles are delicious.',
+        topicId: 'food',
+      },
+      {
+        id: 'soup',
+        english: 'Soup',
+        vietnamese: 'Súp/Canh',
+        phonetic: '/suːp/',
+        example: 'Hot soup is good for cold weather.',
+        topicId: 'food',
+      },
+      {
+        id: 'chicken',
+        english: 'Chicken',
+        vietnamese: 'Thịt gà',
+        phonetic: '/ˈtʃɪkɪn/',
+        example: 'Grilled chicken is healthy.',
+        topicId: 'food',
+      },
+      {
+        id: 'beef',
+        english: 'Beef',
+        vietnamese: 'Thịt bò',
+        phonetic: '/biːf/',
+        example: 'Beef steak is expensive.',
+        topicId: 'food',
+      },
+      {
+        id: 'pork',
+        english: 'Pork',
+        vietnamese: 'Thịt heo',
+        phonetic: '/pɔːrk/',
+        example: 'Pork is popular in Vietnamese cuisine.',
+        topicId: 'food',
+      },
+      {
+        id: 'vegetables',
+        english: 'Vegetables',
+        vietnamese: 'Rau củ',
+        phonetic: '/ˈvedʒtəbəlz/',
+        example: 'Vegetables are good for health.',
+        topicId: 'food',
+      },
+      {
+        id: 'egg',
+        english: 'Egg',
+        vietnamese: 'Trứng',
+        phonetic: '/eɡ/',
+        example: 'I eat eggs for breakfast.',
+        topicId: 'food',
+      },
+      {
+        id: 'milk',
+        english: 'Milk',
+        vietnamese: 'Sữa',
+        phonetic: '/mɪlk/',
+        example: 'Milk is good for children.',
+        topicId: 'food',
+      },
+      {
+        id: 'coffee',
+        english: 'Coffee',
+        vietnamese: 'Cà phê',
+        phonetic: '/ˈkɔːfi/',
+        example: 'Vietnamese coffee is famous.',
+        topicId: 'food',
+      },
+      {
+        id: 'tea',
+        english: 'Tea',
+        vietnamese: 'Trà',
+        phonetic: '/tiː/',
+        example: 'Green tea is healthy.',
+        topicId: 'food',
+      },
+    ],
+  },
+  {
+    id: 'body',
+    name: 'Body Parts',
+    nameVietnamese: 'Bộ Phận Cơ Thể',
+    description: 'Học từ vựng về các bộ phận trên cơ thể',
+    icon: '👤',
+    color: '#E17055',
+    words: [
+      {
+        id: 'head',
+        english: 'Head',
+        vietnamese: 'Đầu',
+        phonetic: '/hed/',
+        example: 'My head hurts.',
+        topicId: 'body',
+      },
+      {
+        id: 'face',
+        english: 'Face',
+        vietnamese: 'Mặt',
+        phonetic: '/feɪs/',
+        example: 'She has a beautiful face.',
+        topicId: 'body',
+      },
+      {
+        id: 'eye',
+        english: 'Eye',
+        vietnamese: 'Mắt',
+        phonetic: '/aɪ/',
+        example: 'Her eyes are blue.',
+        topicId: 'body',
+      },
+      {
+        id: 'nose',
+        english: 'Nose',
+        vietnamese: 'Mũi',
+        phonetic: '/noʊz/',
+        example: 'I can smell with my nose.',
+        topicId: 'body',
+      },
+      {
+        id: 'mouth',
+        english: 'Mouth',
+        vietnamese: 'Miệng',
+        phonetic: '/maʊθ/',
+        example: 'Open your mouth.',
+        topicId: 'body',
+      },
+      {
+        id: 'ear',
+        english: 'Ear',
+        vietnamese: 'Tai',
+        phonetic: '/ɪr/',
+        example: 'I can hear with my ears.',
+        topicId: 'body',
+      },
+      {
+        id: 'hand',
+        english: 'Hand',
+        vietnamese: 'Tay',
+        phonetic: '/hænd/',
+        example: 'Wash your hands.',
+        topicId: 'body',
+      },
+      {
+        id: 'foot',
+        english: 'Foot',
+        vietnamese: 'Chân',
+        phonetic: '/fʊt/',
+        example: 'My foot is tired.',
+        topicId: 'body',
+      },
+      {
+        id: 'arm',
+        english: 'Arm',
+        vietnamese: 'Cánh tay',
+        phonetic: '/ɑːrm/',
+        example: 'Raise your arm.',
+        topicId: 'body',
+      },
+      {
+        id: 'leg',
+        english: 'Leg',
+        vietnamese: 'Chân (từ hông xuống)',
+        phonetic: '/leɡ/',
+        example: 'My leg is strong.',
+        topicId: 'body',
+      },
+      {
+        id: 'finger',
+        english: 'Finger',
+        vietnamese: 'Ngón tay',
+        phonetic: '/ˈfɪŋɡər/',
+        example: 'I have ten fingers.',
+        topicId: 'body',
+      },
+      {
+        id: 'hair',
+        english: 'Hair',
+        vietnamese: 'Tóc',
+        phonetic: '/her/',
+        example: 'Her hair is long.',
+        topicId: 'body',
+      },
+    ],
+  },
+  {
+    id: 'school',
+    name: 'School',
+    nameVietnamese: 'Trường Học',
+    description: 'Học từ vựng về trường học và học tập',
+    icon: '🏫',
+    color: '#6C5CE7',
+    words: [
+      {
+        id: 'school',
+        english: 'School',
+        vietnamese: 'Trường học',
+        phonetic: '/skuːl/',
+        example: 'I go to school every day.',
+        topicId: 'school',
+      },
+      {
+        id: 'classroom',
+        english: 'Classroom',
+        vietnamese: 'Lớp học',
+        phonetic: '/ˈklæsruːm/',
+        example: 'The classroom is clean.',
+        topicId: 'school',
+      },
+      {
+        id: 'student',
+        english: 'Student',
+        vietnamese: 'Học sinh',
+        phonetic: '/ˈstuːdənt/',
+        example: 'She is a good student.',
+        topicId: 'school',
+      },
+      {
+        id: 'book',
+        english: 'Book',
+        vietnamese: 'Sách',
+        phonetic: '/bʊk/',
+        example: 'I read a book.',
+        topicId: 'school',
+      },
+      {
+        id: 'pen',
+        english: 'Pen',
+        vietnamese: 'Bút',
+        phonetic: '/pen/',
+        example: 'I write with a pen.',
+        topicId: 'school',
+      },
+      {
+        id: 'pencil',
+        english: 'Pencil',
+        vietnamese: 'Bút chì',
+        phonetic: '/ˈpensəl/',
+        example: 'Draw with a pencil.',
+        topicId: 'school',
+      },
+      {
+        id: 'notebook',
+        english: 'Notebook',
+        vietnamese: 'Vở',
+        phonetic: '/ˈnoʊtbʊk/',
+        example: 'Write in your notebook.',
+        topicId: 'school',
+      },
+      {
+        id: 'desk',
+        english: 'Desk',
+        vietnamese: 'Bàn học',
+        phonetic: '/desk/',
+        example: 'Sit at your desk.',
+        topicId: 'school',
+      },
+      {
+        id: 'chair',
+        english: 'Chair',
+        vietnamese: 'Ghế',
+        phonetic: '/tʃer/',
+        example: 'The chair is comfortable.',
+        topicId: 'school',
+      },
+      {
+        id: 'blackboard',
+        english: 'Blackboard',
+        vietnamese: 'Bảng đen',
+        phonetic: '/ˈblækbɔːrd/',
+        example: 'Write on the blackboard.',
+        topicId: 'school',
+      },
+      {
+        id: 'homework',
+        english: 'Homework',
+        vietnamese: 'Bài tập về nhà',
+        phonetic: '/ˈhoʊmwɜːrk/',
+        example: 'Do your homework.',
+        topicId: 'school',
+      },
+      {
+        id: 'exam',
+        english: 'Exam',
+        vietnamese: 'Bài kiểm tra',
+        phonetic: '/ɪɡˈzæm/',
+        example: 'The exam is difficult.',
+        topicId: 'school',
+      },
+    ],
+  },
+  {
+    id: 'weather',
+    name: 'Weather',
+    nameVietnamese: 'Thời Tiết',
+    description: 'Học từ vựng về thời tiết và khí hậu',
+    icon: '🌤️',
+    color: '#00B894',
+    words: [
+      {
+        id: 'sunny',
+        english: 'Sunny',
+        vietnamese: 'Nắng',
+        phonetic: '/ˈsʌni/',
+        example: 'Today is sunny.',
+        topicId: 'weather',
+      },
+      {
+        id: 'rainy',
+        english: 'Rainy',
+        vietnamese: 'Mưa',
+        phonetic: '/ˈreɪni/',
+        example: 'It is rainy today.',
+        topicId: 'weather',
+      },
+      {
+        id: 'cloudy',
+        english: 'Cloudy',
+        vietnamese: 'Có mây',
+        phonetic: '/ˈklaʊdi/',
+        example: 'The sky is cloudy.',
+        topicId: 'weather',
+      },
+      {
+        id: 'windy',
+        english: 'Windy',
+        vietnamese: 'Có gió',
+        phonetic: '/ˈwɪndi/',
+        example: 'It is windy outside.',
+        topicId: 'weather',
+      },
+      {
+        id: 'hot',
+        english: 'Hot',
+        vietnamese: 'Nóng',
+        phonetic: '/hɑːt/',
+        example: 'Summer is hot.',
+        topicId: 'weather',
+      },
+      {
+        id: 'cold',
+        english: 'Cold',
+        vietnamese: 'Lạnh',
+        phonetic: '/koʊld/',
+        example: 'Winter is cold.',
+        topicId: 'weather',
+      },
+      {
+        id: 'warm',
+        english: 'Warm',
+        vietnamese: 'Ấm',
+        phonetic: '/wɔːrm/',
+        example: 'Spring is warm.',
+        topicId: 'weather',
+      },
+      {
+        id: 'cool',
+        english: 'Cool',
+        vietnamese: 'Mát',
+        phonetic: '/kuːl/',
+        example: 'Autumn is cool.',
+        topicId: 'weather',
+      },
+      {
+        id: 'snow',
+        english: 'Snow',
+        vietnamese: 'Tuyết',
+        phonetic: '/snoʊ/',
+        example: 'Snow is white.',
+        topicId: 'weather',
+      },
+      {
+        id: 'storm',
+        english: 'Storm',
+        vietnamese: 'Bão',
+        phonetic: '/stɔːrm/',
+        example: 'The storm is dangerous.',
+        topicId: 'weather',
+      },
+      {
+        id: 'thunder',
+        english: 'Thunder',
+        vietnamese: 'Sấm',
+        phonetic: '/ˈθʌndər/',
+        example: 'I hear thunder.',
+        topicId: 'weather',
+      },
+      {
+        id: 'lightning',
+        english: 'Lightning',
+        vietnamese: 'Chớp',
+        phonetic: '/ˈlaɪtnɪŋ/',
+        example: 'Lightning is bright.',
+        topicId: 'weather',
+      },
+    ],
+  },
 ];

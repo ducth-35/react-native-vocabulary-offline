@@ -1,4 +1,4 @@
-package com.template
+package com.vocabhero.tuvungmoingay
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

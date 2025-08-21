@@ -13,9 +13,11 @@ import { navigate } from '../../navigators/navigation-services';
 import { APP_SCREEN } from '../../navigators/screen-type';
 import { Topic } from '../../types';
 import { colors, spacing, borderRadius, shadows } from '../../styles/theme';
+import { useHideTabBarOnScroll } from '../../components';
 
 export const TopicsScreen: React.FC = () => {
   const { topics } = useVocabularyStore(state => state);
+  const { onScroll } = useHideTabBarOnScroll({ scrollThreshold: 40 });
 
   const getTopicGradient = (topicId: string) => {
     switch (topicId) {
@@ -74,6 +76,8 @@ export const TopicsScreen: React.FC = () => {
         contentContainerStyle={styles.listContainer}
         showsVerticalScrollIndicator={false}
         numColumns={1}
+        onScroll={onScroll}
+        scrollEventThrottle={16}
       />
     </SafeAreaView>
   );
@@ -105,7 +109,7 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     paddingHorizontal: spacing.xl,
-    paddingBottom: spacing.xl,
+    paddingBottom: 120, // Extra space for tab bar
   },
   topicCardContainer: {
     marginBottom: spacing.lg,

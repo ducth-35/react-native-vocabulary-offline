@@ -15,15 +15,17 @@ import { APP_SCREEN } from '../../navigators/screen-type';
 import { Word } from '../../types';
 import { ttsService } from '../../utils';
 import { colors, spacing, borderRadius, shadows } from '../../styles/theme';
+import { useHideTabBarOnScroll } from '../../components';
 
 export const DailyWordsScreen: React.FC = () => {
   const {
     topics,
     actions
   } = useVocabularyStore(state => state);
-  
+
   const [dailyWords, setDailyWords] = useState<Word[]>([]);
   const [learnedWords, setLearnedWords] = useState<string[]>([]);
+  const { onScroll } = useHideTabBarOnScroll({ scrollThreshold: 40 });
 
   const refreshData = () => {
     // Get today's words (assigned for today)
@@ -220,6 +222,8 @@ export const DailyWordsScreen: React.FC = () => {
           keyExtractor={(item) => item.id}
           contentContainerStyle={styles.listContainer}
           showsVerticalScrollIndicator={false}
+          onScroll={onScroll}
+          scrollEventThrottle={16}
         />
       ) : (
         <View style={styles.emptyContainer}>
@@ -338,7 +342,7 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     paddingHorizontal: spacing.xl,
-    paddingBottom: spacing.xl,
+    paddingBottom: 120, // Extra space for tab bar
   },
   wordCard: {
     backgroundColor: colors.backgroundCard,

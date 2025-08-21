@@ -12,6 +12,7 @@ import { useVocabularyStore } from '../../store/useVocabularyStore';
 import { navigate } from '../../navigators/navigation-services';
 import { APP_SCREEN } from '../../navigators/screen-type';
 import { colors, spacing, borderRadius, shadows } from '../../styles/theme';
+import { useHideTabBarOnScroll } from '../../components';
 
 export const HomeScreen: React.FC = () => {
   const {
@@ -20,6 +21,8 @@ export const HomeScreen: React.FC = () => {
     userSettings,
     actions
   } = useVocabularyStore(state => state);
+
+  const { onScroll } = useHideTabBarOnScroll({ scrollThreshold: 30 });
 
   useEffect(() => {
     // Generate daily words when app starts
@@ -85,7 +88,13 @@ export const HomeScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.scrollView}
+        showsVerticalScrollIndicator={false}
+        onScroll={onScroll}
+        scrollEventThrottle={16}
+        contentContainerStyle={styles.scrollContent}
+      >
         {/* Header with Gradient */}
         <LinearGradient
           colors={colors.primaryGradient}
@@ -146,6 +155,9 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     flex: 1,
+  },
+  scrollContent: {
+    paddingBottom: 100, // Space for tab bar
   },
   header: {
     padding: spacing.xxxl,
